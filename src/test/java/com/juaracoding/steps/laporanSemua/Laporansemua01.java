@@ -20,7 +20,7 @@ public class Laporansemua01 {
     LaporanSemuaPage laporanSemuaPage;
 
     @Given("Login")
-    public void loginAcc(){
+    public void loginAcc() {
 
         driver = DriverSingleton.createOrGetDriver();
         LoginHelper loginHelper = new LoginHelper(driver);

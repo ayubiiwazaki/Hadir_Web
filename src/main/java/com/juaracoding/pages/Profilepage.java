@@ -30,6 +30,7 @@ public class Profilepage {
         wait.until(ExpectedConditions.elementToBeClickable(navbarButton));
         navbarButton.click();
     }
+
     public void logoutButton() {
         wait.until(ExpectedConditions.elementToBeClickable(logoutButton));
         logoutButton.click();

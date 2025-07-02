@@ -18,7 +18,7 @@ Feature: Authentication feature test
     Then Pengguna akan melihat pesan error
 
     Examples:
-      | username       | password       |
+      | username         | password         |
       | admiiin@hair.com | MagangSQA_JC@123 |
 
 
@@ -29,7 +29,7 @@ Feature: Authentication feature test
     Then Pengguna akan melihat pesan error validasi email
 
     Examples:
-      | username       | password       |
+      | username      | password         |
       | adminhair.com | MagangSQA_JC@123 |
 
 
@@ -40,7 +40,7 @@ Feature: Authentication feature test
     Then Pengguna akan melihat pesan error 03
 
     Examples:
-      | username       | password       |
+      | username        | password       |
       | admin@hadir.com | password_salah |
 
   Scenario Outline: Login dengan password kosong
@@ -50,8 +50,8 @@ Feature: Authentication feature test
     Then Pengguna akan melihat pesan error 04
 
     Examples:
-      | username       | password       |
-      | admin@hadir.com |  |
+      | username        | password |
+      | admin@hadir.com |          |
 
   Scenario Outline: Login dengan email kosong
     Given Buka halaman login untuk pengujian login invalid 05
@@ -60,8 +60,8 @@ Feature: Authentication feature test
     Then Pengguna akan melihat pesan error 05
 
     Examples:
-      | username       | password       |
-      |  | MagangSQA_JC@123 |
+      | username | password         |
+      |          | MagangSQA_JC@123 |
 
   Scenario Outline: Login dengan email dan password kosong
     Given Buka halaman login untuk pengujian login invalid 06
@@ -70,8 +70,8 @@ Feature: Authentication feature test
     Then Pengguna akan melihat pesan error 06
 
     Examples:
-      | username       | password       |
-      |  |  |
+      | username | password |
+      |          |          |
 
   Scenario Outline: Verifikasi Log out akun
     Given Buka halaman login

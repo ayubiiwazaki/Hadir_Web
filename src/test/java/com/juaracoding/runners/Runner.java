@@ -5,7 +5,7 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(features = {
         "src/test/resources/features"
-}, plugin = { "pretty:target/pretty.txt",
+}, plugin = {"pretty:target/pretty.txt",
         "html:target/cucumber-reports/index.html",
         "json:target/cucumber-reports/index.json",
         "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",

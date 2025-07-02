@@ -12,7 +12,7 @@ Feature: Laporan semua
     Then Klik tombol search
 
     Examples:
-      | nama         | startDate  | endDate    |
+      | nama  | startDate    | endDate      |
       | komar | Jun 20, 2025 | Jun 20, 2025 |
 
   Scenario Outline: Menampilkan  data laporan semua dengan tidak menuliskan nama
@@ -23,8 +23,8 @@ Feature: Laporan semua
     Then Klik tombol search 02
 
     Examples:
-      | nama         | startDate  | endDate    |
-      |              | Jun 20, 2025 | Jun 20, 2025 |
+      | nama | startDate    | endDate      |
+      |      | Jun 20, 2025 | Jun 20, 2025 |
 
   Scenario Outline: Menampilkan  data laporan semua dengan tidak memilih tanggal star date dan end date
     When Klik menu laporan semua 03
@@ -33,8 +33,8 @@ Feature: Laporan semua
     Then Klik tombol search 03
 
     Examples:
-      | nama         | startDate  | endDate    |
-      |   komar      |  |  |
+      | nama  | startDate | endDate |
+      | komar |           |         |
 
   Scenario Outline: Menampilkan  data laporan semua dengan tidak memilih filter departement
     When Klik menu laporan semua 04
@@ -44,8 +44,8 @@ Feature: Laporan semua
     Then Klik tombol search 04
 
     Examples:
-      | nama         | startDate  | endDate    |
-      |       komar    |  Jun 20, 2025 | Jun 20, 2025 |
+      | nama  | startDate    | endDate      |
+      | komar | Jun 20, 2025 | Jun 20, 2025 |
 
   Scenario Outline: Menampilkan  data laporan semua dengan tidak memasukkan nama, tidak memilih tanggal star date dan end date dan tidak memilih filter departement
     When Klik menu laporan semua 05
@@ -55,5 +55,5 @@ Feature: Laporan semua
     Then Klik tombol search 05
 
     Examples:
-      | nama         | startDate  | endDate    |
-      |           |  |  |
+      | nama | startDate | endDate |
+      |      |           |         |
